@@ -1,7 +1,8 @@
 import os
+from typing import Iterator
 
 
-def ft_tqdm(lst: range) -> None:
+def ft_tqdm(lst: range) -> Iterator[None]:
     """
     Mimics the tqdm progress bar using the yield operator.
     Displays a progress bar adapted to the terminal width.

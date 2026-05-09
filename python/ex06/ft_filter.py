@@ -6,5 +6,5 @@ def ft_filter(function, iterable):
     is true. If function is None, return the items that are true.
     """
     if function is None:
-        return (item for item in iterable if item)
-    return (item for item in iterable if function(item))
+        return iter([item for item in iterable if item])
+    return iter([item for item in iterable if function(item)])

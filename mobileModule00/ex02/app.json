@@ -1,0 +1,15 @@
+{
+  "expo": {
+    "name": "ex02",
+    "slug": "ex02",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true
+    },
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}

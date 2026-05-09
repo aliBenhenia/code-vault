@@ -15,10 +15,8 @@ def main():
             n = int(args[1])
         except ValueError:
             raise AssertionError("the arguments are bad")
-        if args[0].lstrip('-').isdigit():
-            raise AssertionError("the arguments are bad")
         s = args[0]
-        result = list(ft_filter(lambda w: len(w) > n, s.split(' ')))
+        result = [w for w in ft_filter(lambda w: len(w) > n, s.split(' '))]
         print(result)
     except AssertionError as e:
         print(f"AssertionError: {e}")
